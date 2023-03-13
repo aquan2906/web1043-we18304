@@ -1,5 +1,6 @@
-   // Nhập họ tên và giới tính từ người dùng
+   // nhap ho ten
    let hoTen = prompt("Nhập vào họ và tên:");
+   // nhap gioi tinh
    let gioiTinh = prompt("Nhập vào giới tính (Nam/Nữ):");
 
    // tach ho ten ten dem

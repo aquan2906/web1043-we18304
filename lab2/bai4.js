@@ -9,6 +9,6 @@
  arr.splice(6, 1, "Sun");
 
  // In mảng kết quả
- console.log('Xuat chuoi ngay trong tuan: ' + arr);
+
 
  document.write('Xuat chuoi ngay trong tuan: ' + arr);
