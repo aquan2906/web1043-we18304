@@ -48,17 +48,26 @@
       // tính điểm trung bình cộng 4 môn
     var diem_tb = (toan + ly + hoa + sinh) / 4;
   
-    // xuất kết quả xếp loại
-    if (diem_tb >= 9 && diem_tb <= 10) {
-      console.log("Giỏi");
-    } else if (diem_tb >= 7 && diem_tb < 9) {
-      console.log("Khá");
-    } else if (diem_tb >= 5 && diem_tb < 7) {
-      console.log("Trung bình");
-    } else {
-      console.log("Yếu");
-    }
-    }
+   // Xếp loại
+   let xepLoai = "";
+   switch (true) {
+     case diem_tb >= 9 &&  diem_tb <= 10:
+       xepLoai = "Giỏi";
+       break;
+     case  diem_tb >= 7 &&  diem_tb < 9:
+       xepLoai = "Khá";
+       break;
+     case  diem_tb>= 5 && diem_tb < 7:
+       xepLoai = "Trung bình";
+       break;
+     default:
+       xepLoai = "Yếu";
+       break;
+   }
+ 
+   // In kết quả
+   console.log("Điểm trung bình: " +  diem_tb.toFixed(2) + " - Xếp loại: " + xepLoai);
+ }
     function tinhDiemTrungBinh(toan, ly, hoa, sinh) {
         // kiểm tra điều kiện đầu vào
         if (toan < 0 || toan > 10 || ly < 0 || ly > 10 || hoa < 0 || hoa > 10 || sinh < 0 || sinh > 10) {
