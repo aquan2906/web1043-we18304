@@ -10,5 +10,4 @@
 
  // In mảng kết quả
 
-
  document.write('Xuat chuoi ngay trong tuan: ' + arr);

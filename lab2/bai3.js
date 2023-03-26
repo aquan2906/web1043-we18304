@@ -3,7 +3,7 @@
    // nhap gioi tinh
    let gioiTinh = prompt("Nhập vào giới tính (Nam/Nữ):");
 
-   // tach ho ten ten dem
+   // tach ho ten 
    let hten = hoTen.split(" ");
    let ho = hten[0];
    let tenDem = hten.slice(1, hten.length - 1).join(" ");
