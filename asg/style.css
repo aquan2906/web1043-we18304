@@ -1,0 +1,94 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+.wrapper {
+    width: 90%;
+    background-color: antiquewhite;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: aqua;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+    background-color: brown;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu span {
+    padding: 10px;
+    background-color: palevioletred;
+    margin: 5px;
+}
+
+.banner {
+    background-color: rgb(179, 165, 39);
+    height: 240px;
+}
+
+.partners {
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.p-tiem {
+    width: 80px;
+    height: 40px;
+    background-color: grey;
+}
+
+.service {
+    background-color: pink;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.service-row {
+    background-color: bisque;
+    min-height: fit-content;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.image {
+    margin:5px;
+    width: 100px;
+    height: 120px;
+    background-color: aqua;
+}
+
+
