@@ -1,12 +1,12 @@
 body{
-  background-color: aquamarine;
+
   margin: 0px;
   padding: 0px;
 }
 
 .container{
   width: 100%;
-  background-color: antiquewhite;
+
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -15,91 +15,92 @@ body{
   
 }
 .header{
-
-  flex-direction: column;
   display: flex;
-  position: absolute;
- 
-
-  
-}
-.thuonghieu{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-.menu{
+  flex-direction: row;
   background-color: #717171;
-  text-align: center;
-  height: auto;
+  justify-content: space-between;
   
 }
-.menu ul{
-  display: flex;
-  justify-content: center;
-  
-}
-.menu li{
-  padding: 10px;
-  margin: 5px;
-  background-color: #f2f2f2;
-}
-.menu a{
-  text-decoration: none;
-}
+ul{
 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header li{
+ margin: 10px;
+  background-color: #bbb;
+  padding: 5px;
+}
+.header a{
+  margin: 50px ;
+  text-decoration: none;
+  color: black;
+
+}
+.header li:hover{
+  background-color:bisque;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 10px;
+
+}
 .logo{
   background-color: #717171;
-  min-height: fit-content;
+  padding: 15px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
-.logo1{
-  background-color: burlywood;
-  min-height: fit-content;
-  margin: 5px;
+.logoimg{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+flex-direction:row-reverse ;
+  justify-content: space-around;
+  padding: 20px;
+}
+.logoimg img{
+  border: 1px solid black;
   
 }
-.imge img{
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  width: 50%;
-}
+
+
 .container_sp{
   flex-direction: row;
-  justify-content: center;
+  justify-content: first baseline;
   width: 100%;
   display: flex;
   min-height: 300px;
+position: relative;
+padding: 10px;
+background-image: url(style/br1.jpg);
+background-size: 100% 100%;
 
 }
 .congti1{
   padding: 5px;
 }
 .container_sp img{
-    height: 300px;
+  height: 300px;
+  border: 1px solid black;
 
 }
+.congti2 p{
+  margin-top: 0px;
+
+  color: white;
+}
+.congti2 button:hover{
+  background-color:#bbb ;
+}
 .service {
-  background-color: pink;
+ margin:0px ;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .service-row {
-  background-color: bisque;
+  background-color: #717171;
   min-height: fit-content;
   margin: 5px;
   display: flex;
@@ -110,20 +111,39 @@ body{
 .item {
   display: flex;
   flex-direction: column;
-  background-color: tomato;
   margin: 20px;
   align-items: center;
   justify-content: center;
   padding: 10px;
+  border: 1px solid black;
+}
+.item :hover{
+  background-color:#bbb ;
+  display: block;
+}
+.description {
+  width: 170px;
+  justify-content: center;
+}
+.description a button{
+  background-color: aquamarine;
 }
 
-.image {
+.image img {
   margin:5px;
-  width: 100px;
-  height: 120px;
+  width: 150px;
+  height: 170px;
   background-color: aqua;
 }
 
+
+.formlh{
+background-image: url("style/bk1.jpg");
+background-size: 100% 100%;
+padding: 30px;
+   
+}
+.form-dangki{}
 
 * {box-sizing:border-box}
 
@@ -131,7 +151,7 @@ body{
 .slideshow-container {
 max-width: 1000px;
 position: relative;
-margin: auto;
+margin: 10px auto;
 }
 
 /* Hide the images by default */
@@ -211,4 +231,68 @@ animation-duration: 1.5s;
 @keyframes fade {
 from {opacity: .4}
 to {opacity: 1}
+}
+
+
+@-webkit-keyframes my {
+  0% {
+      color: #ffff00;
+  }
+
+  50% {
+      color: red;
+  }
+
+  100% {
+      color: #ffff00;
+  }
+}
+
+@-moz-keyframes my {
+  0% {
+      color: #ffff00;
+  }
+
+  50% {
+      color: red;
+  }
+
+  100% {
+      color: #ffff00;
+  }
+}
+
+@-o-keyframes my {
+  0% {
+      color: #ffff00;
+  }
+
+  50% {
+      color: red;
+  }
+
+  100% {
+      color: #ffff00;
+  }
+}
+
+@keyframes my {
+  0% {
+      color: #ffff00;
+  }
+
+  50% {
+      color: red;
+  }
+
+  100% {
+      color: #ffff00;
+  }
+}
+
+h3 {
+  -webkit-animation: my 700ms infinite;
+  -moz-animation: my 700ms infinite;
+  -o-animation: my 700ms infinite;
+  animation: my 700ms infinite;
 }
